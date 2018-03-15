@@ -95,4 +95,6 @@ paste S2cs.txt s2gpa.txt> s2sgpa.txt
 
 paste s2sgpa.txt s1sgpa.txt | awk '{printf "%s  %.1f\n",$1,($11 *24 + $22 *23)/47}'> cgpa.txt
 
+cut -f 4- c4b.txt > c4b1.txt
 
+join <(sort cgpa.txt) <(sort c4b1.txt)  > c4bcgpa.txt
