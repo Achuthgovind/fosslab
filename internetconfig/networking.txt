@@ -1,0 +1,3 @@
+ifconfig //ip address
+ifconifg eth0 {{ ipaddress }} netmast {{ 255.255.255.255 }}
+route add default gw ip 
